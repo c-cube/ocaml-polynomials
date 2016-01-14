@@ -19,3 +19,10 @@ let p = Polynomial.of_list
   ]
 ;;
 
+Format.printf "p = @[%a@]@." Polynomial.print p;;
+
+Format.printf "p + p = @[%a@]@."
+  Polynomial.print (Polynomial.add p p);;
+
+Format.printf "p × p = @[%a@]@."
+  Polynomial.print (Polynomial.mult p p);;
